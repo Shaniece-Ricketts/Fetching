@@ -9,10 +9,11 @@ export async function getComments() {
       
         .then((data) => {
             console.log(data);
+            let container= document.querySelector(".commentsContainer")
             for (let i = 0; i < 20; i++) { 
                 let commentElement = document.createElement('p'); 
                 commentElement.innerHTML = data[i].body; 
-                document.body.appendChild(commentElement); 
+                container.appendChild(commentElement); 
             }
         });
         

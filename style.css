@@ -19,5 +19,7 @@
     padding:1em;
 }  
 
-
+.commentsContainer{
+    border: solid plum;
+}
 
